@@ -11,6 +11,7 @@ int main()
 	cin.getline(message, 100);
 	cout << "Enter key: ";
 	cin >> key;
+	key = key % 26;
 	
 	for(i = 0; message[i] != '\0'; ++i){
 		ch = message[i];
